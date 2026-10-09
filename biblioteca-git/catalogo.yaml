@@ -138,7 +138,7 @@ repositorios:
     url: "https://github.com/adobe-research/AnyDoc"
     categoria: "documentos-html-css-ia"
     prioridade_inicial: "P2"
-  - id: mattpocock-skills
+  - id: mattpocock-skills-lote-2
     url: "https://github.com/mattpocock/skills"
     categoria: "skills-engenharia"
     prioridade_inicial: "P0"
