@@ -27,7 +27,7 @@ Este documento registra padrões de engenharia selecionados na triagem de 2026-1
 - **Matt Pocock Skills:** skills pequenas e composáveis; selecionar apenas as que agreguem valor frente às já existentes.
 - **Archify:** diagramas versionados como documentação auxiliar; validar a fidelidade contra o código.
 - **Herder:** fila durável, estados explícitos, lease/heartbeat, retries, cooldown, concorrência e permissões por job; ainda exige avaliação de maturidade.
-- **Orca (identidade provisória):** harness local-first, objetivos duráveis, estado inspecionável e governança; não copiar código sem esclarecer licença.
+- **Orca (ShawnCholeva/orca, identidade confirmada):** benchmark de control plane local-first, daemon como fonte de estado, eventos persistidos, workflows, memória por Goal e gates de aprovação. A licença não foi encontrada no caminho padrão; não copiar código até esclarecer. Auditar auth, CORS/WebSocket, PTY, hooks de permissão e sandbox antes de executar.
 - **DeepSeek Harness:** plugin architecture como referência, mas o próprio projeto declara preview experimental sem auditoria; laboratório isolado somente.
 - **OmniRoute:** roteamento/fallback entre provedores exige política de custos, privacidade, credenciais e termos.
 - **AnyDoc:** referência de pesquisa para documentos editáveis; licença de pesquisa não comercial para datasets/checkpoints, sem código de treino/inferência declarado.
