@@ -44,7 +44,7 @@ repositorios:
   - id: picoclaw
     url: "https://github.com/sipeed/picoclaw"
     categoria: "agentes-edge"
-  - id: mirof​​ish
+  - id: mirofish
     url: "https://github.com/666ghj/MiroFish"
     categoria: "simulacao-multiagente"
   - id: composio-repositories
