@@ -13,7 +13,7 @@ Este documento registra padrões de engenharia selecionados na triagem de 2026-1
 9. **Licença antes do código:** listas awesome e exemplos de referência não são componentes homologados; licença ausente significa não copiar código.
 10. **Human-in-the-loop:** não mesclar, publicar, fazer deploy, gastar recursos ou executar ações industriais críticas sem autorização explícita.
 
-## Referências selecionadas
+## Referências selecionadas — lote 1
 - obra/superpowers: especificação, planejamento, TDD e YAGNI.
 - Kulaxyz/self-learning-skills: golden paths, falhas e conhecimento reutilizável.
 - betta-tech/ejemplo-harness-subagentes: separação leader/implementer/reviewer, checkpoints e testes; licença ainda precisa ser confirmada.
@@ -23,5 +23,15 @@ Este documento registra padrões de engenharia selecionados na triagem de 2026-1
 - microsoft/ai-agents-for-beginners: recurso educacional.
 - SynkraAI/aiox-core e NousResearch/hermes-agent: candidatos para benchmark, não adoção automática.
 
+## Referências selecionadas — lote 2
+- **Matt Pocock Skills:** skills pequenas e composáveis; selecionar apenas as que agreguem valor frente às já existentes.
+- **Archify:** diagramas versionados como documentação auxiliar; validar a fidelidade contra o código.
+- **Herder:** fila durável, estados explícitos, lease/heartbeat, retries, cooldown, concorrência e permissões por job; ainda exige avaliação de maturidade.
+- **Orca (identidade provisória):** harness local-first, objetivos duráveis, estado inspecionável e governança; não copiar código sem esclarecer licença.
+- **DeepSeek Harness:** plugin architecture como referência, mas o próprio projeto declara preview experimental sem auditoria; laboratório isolado somente.
+- **OmniRoute:** roteamento/fallback entre provedores exige política de custos, privacidade, credenciais e termos.
+- **AnyDoc:** referência de pesquisa para documentos editáveis; licença de pesquisa não comercial para datasets/checkpoints, sem código de treino/inferência declarado.
+- **OpenMontage:** possível ferramenta adjacente para vídeos de treinamento; AGPLv3 e dependências externas exigem análise antes de adaptação.
+
 ## Gates de promoção de conhecimento
-Promover um padrão apenas com versão/fonte identificadas, hipótese de uso, teste reproduzível, limitações e falhas documentadas, revisão de licença/segurança, aprovação humana, versionamento e rollback.
+Promover um padrão apenas com versão/fonte identificadas, hipótese de uso, teste reproduzível, limitações e falhas documentadas, revisão de licença/segurança, aprovação humana, versionamento e rollback. Omarship e Mander Diffling não foram assimilados porque suas identidades não foram confirmadas.
