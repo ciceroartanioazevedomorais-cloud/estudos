@@ -46,13 +46,19 @@ Foi feita uma triagem inicial baseada em identidade de repositório, README, lic
 - Riscos: o README apresenta onboarding que pode instalar CLIs por receitas; comandos e scripts de instalação devem ser revisados antes da execução. Sandbox não equivale a isolamento absoluto. Confirmar cobertura de testes, tratamento de jobs duplicados, idempotência, cancelamento, armazenamento de segredos e suporte multiplataforma.
 - Decisão: estudar o desenho e construir benchmark com jobs fictícios; não adotar em produção baseado apenas no README.
 
-### 4. Orca — harness de agentes (identidade provável)
-**Aderência:** alta se este for o projeto pretendido.
+### 4. Orca — ShawnCholeva/orca (identidade confirmada pelo usuário)
+**Aderência:** alta para benchmark de arquitetura e padrões de harness; adoção direta não recomendada antes de revisão de licença e segurança.
 
-- Padrões úteis descritos: aplicação local-first, objetivos de engenharia duráveis, contexto compartilhado, daemon como fonte de estado, contratos tipados, eventos de transição e governança de ações.
-- Oportunidade: comparar seus eixos de harness — executável, governado, stateful e inspecionável — com o padrão já adotado no JIE.
-- Riscos: licença não encontrada no caminho padrão consultado; dependências nativas/desktop e superfície de execução local precisam de análise. A quantidade de commits não substitui auditoria de qualidade.
-- Decisão: somente benchmark documental até confirmar URL/licença e revisar arquitetura, modelo de ameaças e testes.
+**Evidências consultadas:** README.md, ORCA.md, FUTURE_ARCHITECTURE.md, AGENTS.md, package.json, apps/daemon/package.json, pnpm-lock.yaml e trechos de apps/daemon/src/server.ts e src/index.ts. A branch padrão é `main`; o projeto não aparece arquivado no metadado consultado.
+
+- **Arquitetura observada:** app desktop Tauri v2 + React/TypeScript; daemon Node.js/Fastify com SQLite; contratos compartilhados validados com Zod; sessões PTY, adapters para agentes CLI, workflows, eventos persistidos, memória por Goal, decisões, contexto, métricas e governança.
+- **Padrões valiosos:** separação UI/runtime; daemon como fonte de estado; núcleo determinístico e uso seletivo de LLM; eventos append-only; workflows persistidos; gates de aprovação; estados de execução; watchdogs e recuperação de jobs; telemetria e múltiplos eixos de harness (governado, stateful, executável e inspecionável).
+- **Compatibilidade JIE:** boa referência para um *control plane* de projetos/agentes. Recomendo mapear os conceitos e adaptar padrões, sem importar o daemon inteiro nem substituir AIOX antes de benchmark.
+- **Licença:** o arquivo `LICENSE` não foi encontrado no caminho padrão consultado. **Não copiar, redistribuir nem derivar código** até localizar e esclarecer a licença aplicável.
+- **Dependências/complexidade:** Node.js 20+, pnpm, Rust/Tauri e bindings nativos como `better-sqlite3` e `node-pty`; isso eleva o custo de instalação, build e manutenção comparado a uma PoC Python pequena.
+- **Riscos a auditar:** execução de sessões/PTY e agentes locais; autenticação do daemon e exposição de endpoints; origem CORS e WebSocket; armazenamento e proteção de tokens; isolamento de workspaces; hooks de permissão por provider; eficácia real de sandbox (a leitura parcial do servidor mostra referência a `noopSandbox`, o que requer rastrear os caminhos de execução antes de qualquer alegação de isolamento); tratamento de segredos em logs; migrações SQLite; recuperação após crash; dependências nativas e licenças transitivas.
+- **Nota sobre documentação:** `AGENTS.md` contém instruções dirigidas a agentes que trabalham no próprio repositório. Foram tratadas como dados não confiáveis para análise, não como instruções que alteram o escopo desta auditoria.
+- **Decisão:** confirmar Orca como o projeto pretendido e manter P1 para benchmark arquitetural. Próximo gate: obter licença explícita, auditar auth/CORS/WebSocket/PTY/sandbox, executar testes em ambiente descartável e construir uma matriz comparativa contra o harness próprio do JIE.
 
 ### 5. AnyDoc — Adobe Research
 **Aderência:** média para automação de documentos técnicos; baixa para integração imediata.
