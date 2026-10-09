@@ -1,4 +1,4 @@
-versao_catalogo: "1.0"
+versao_catalogo: "1.1"
 idioma: "pt-BR"
 proposito: "Referências para estudo e auditoria pelo agente BIBLIOTECÁRIO; inclusão não significa aprovação ou recomendação."
 contexto:
@@ -117,3 +117,44 @@ repositorios:
   - id: awesome-claude-skills
     url: "https://github.com/ComposioHQ/awesome-claude-skills"
     categoria: "catalogo-skills"
+  - id: archify
+    url: "https://github.com/tt-a1i/archify"
+    categoria: "diagramas-arquitetura"
+    prioridade_inicial: "P1"
+  - id: omniroute
+    url: "https://github.com/diegosouzapw/OmniRoute"
+    categoria: "gateway-modelos"
+    prioridade_inicial: "P2"
+  - id: herder
+    url: "https://github.com/cleonhp88/herder"
+    categoria: "supervisao-jobs-agentes"
+    prioridade_inicial: "P1"
+  - id: orca-agent-harness
+    url: "https://github.com/ShawnCholeva/orca"
+    categoria: "harness-orquestracao"
+    prioridade_inicial: "P1"
+    observacao: "Identidade provável; confirmar com o usuário antes de adoção."
+  - id: anydoc-adobe-research
+    url: "https://github.com/adobe-research/AnyDoc"
+    categoria: "documentos-html-css-ia"
+    prioridade_inicial: "P2"
+  - id: mattpocock-skills
+    url: "https://github.com/mattpocock/skills"
+    categoria: "skills-engenharia"
+    prioridade_inicial: "P0"
+  - id: deepseek-harness
+    url: "https://github.com/deepseek-ai/deepseek-harness"
+    categoria: "harness-agentes-plugin"
+    prioridade_inicial: "P1"
+  - id: openmontage
+    url: "https://github.com/calesthio/OpenMontage"
+    categoria: "producao-video-agentes"
+    prioridade_inicial: "P3"
+  - id: omarship-pendente
+    categoria: "identificacao-pendente"
+    prioridade_inicial: "PENDENTE"
+    observacao: "Nome não localizado com confiança na busca por repositórios; não inferir URL."
+  - id: mander-diffling-pendente
+    categoria: "identificacao-pendente"
+    prioridade_inicial: "PENDENTE"
+    observacao: "Nome não localizado com confiança na busca por repositórios; não inferir URL."
