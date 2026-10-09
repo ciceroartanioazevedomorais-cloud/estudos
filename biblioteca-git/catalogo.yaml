@@ -1,0 +1,161 @@
+versao_catalogo: "1.1"
+idioma: "pt-BR"
+proposito: "Referências para estudo e auditoria pelo agente BIBLIOTECÁRIO; inclusão não significa aprovação ou recomendação."
+contexto:
+  objetivos:
+    - "Engenharia de IA aplicada à indústria"
+    - "Qualidade Industrial, PCP, Segurança do Trabalho, Meio Ambiente e SGI"
+    - "Arquitetura JIE/AIOX/CIOS, agentes, MCP, RAG, memória e automação"
+  controles:
+    - "Auditoria de licença e segurança antes de reutilizar código"
+    - "PoC isolada, dependências fixadas, testes e revisão humana"
+    - "Não executar nem instalar repositórios automaticamente"
+repositorios:
+  - id: claude-code-fork
+    url: "https://github.com/DonutShinobu/claude-code-fork"
+    categoria: "engenharia-agentes"
+  - id: openmythos
+    url: "https://github.com/kyegomez/OpenMythos"
+    categoria: "modelos-e-arquitetura"
+  - id: karpathy-gist
+    url: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    categoria: "referencia-tecnica"
+  - id: ai-agents-for-beginners
+    url: "https://github.com/microsoft/ai-agents-for-beginners"
+    categoria: "formacao"
+  - id: public-apis
+    url: "https://github.com/public-apis/public-apis"
+    categoria: "integracoes-api"
+  - id: superpowers
+    url: "https://github.com/obra/superpowers"
+    categoria: "engenharia-software"
+  - id: mcp-servers
+    url: "https://github.com/modelcontextprotocol/servers"
+    categoria: "mcp-integracoes"
+  - id: hermes-agent-nousresearch
+    url: "https://github.com/nousresearch/hermes-agent"
+    categoria: "agentes-orquestracao"
+  - id: private-journal-mcp
+    url: "https://github.com/obra/private-journal-mcp"
+    categoria: "mcp-memoria"
+  - id: awesome-mcp-servers
+    url: "https://github.com/punkpeye/awesome-mcp-servers"
+    categoria: "catalogo-mcp"
+  - id: picoclaw
+    url: "https://github.com/sipeed/picoclaw"
+    categoria: "agentes-edge"
+  - id: mirofish
+    url: "https://github.com/666ghj/MiroFish"
+    categoria: "simulacao-multiagente"
+  - id: composio-repositories
+    url: "https://github.com/orgs/ComposioHQ/repositories"
+    categoria: "integracoes-agentes"
+  - id: idempotentapi
+    url: "https://github.com/ikyriak/IdempotentAPI"
+    categoria: "confiabilidade"
+  - id: harness-subagentes
+    url: "https://github.com/betta-tech/ejemplo-harness-subagentes"
+    categoria: "harness-multiagente"
+  - id: deskcomm
+    url: "https://github.com/thalena-lima/deskcomm"
+    categoria: "automacao-industrial-potencial"
+  - id: opensquad
+    url: "https://github.com/renatoasse/opensquad"
+    categoria: "multiagentes"
+  - id: hermes-desktop
+    url: "https://github.com/fathah/hermes-desktop"
+    categoria: "interface-agentes"
+  - id: goose-skills
+    url: "https://github.com/gooseworks-ai/goose-skills"
+    categoria: "skills"
+  - id: aiox-core
+    url: "https://github.com/SynkraAI/aiox-core"
+    categoria: "orquestracao"
+  - id: claude-code-demos-video-01
+    url: "https://github.com/adrianoviana/claude-code-demos/tree/main/video-01-criador-usa"
+    categoria: "aprendizagem-pratica"
+  - id: notebooklm-py
+    url: "https://github.com/teng-lin/notebooklm-py"
+    categoria: "gestao-conhecimento"
+  - id: anthropic-skills
+    url: "https://github.com/anthropics/skills"
+    categoria: "skills"
+  - id: agentic-awesome-skills
+    url: "https://github.com/sickn33/agentic-awesome-skills"
+    categoria: "skills"
+  - id: rlm
+    url: "https://github.com/alexzhang13/rlm"
+    categoria: "raciocinio-e-contexto"
+  - id: mattpocock-skills
+    url: "https://github.com/mattpocock/skills"
+    categoria: "skills-engenharia"
+  - id: self-learning-skills
+    url: "https://github.com/kulaxyz/self-learning-skills"
+    categoria: "memoria-aprendizado"
+  - id: hermes-agent-duplicate
+    url: "https://github.com/NousResearch/hermes-agent"
+    categoria: "duplicata-a-normalizar"
+    duplicata_de: "hermes-agent-nousresearch"
+  - id: tech-leads-club
+    url: "https://github.com/orgs/tech-leads-club/repositories"
+    categoria: "skills-especificacoes"
+  - id: open-genspark
+    url: "https://github.com/composio-temp/open-genspark?tab=readme-ov-file"
+    categoria: "agentes-automacao"
+  - id: claw-code
+    url: "https://github.com/ultraworkers/claw-code"
+    categoria: "engenharia-agentes"
+  - id: gstack
+    url: "https://github.com/garrytan/gstack"
+    categoria: "engenharia-software"
+  - id: linkedin-automator
+    url: "https://github.com/Jhonatan-de-Souza/LinkedInAutomator-Code"
+    categoria: "automacao-web"
+  - id: orchestrate-skill
+    url: "https://github.com/rafaelquintanilha/skills/blob/master/skills/orchestrate/SKILL.md"
+    categoria: "orquestracao-skills"
+  - id: awesome-claude-skills
+    url: "https://github.com/ComposioHQ/awesome-claude-skills"
+    categoria: "catalogo-skills"
+  - id: archify
+    url: "https://github.com/tt-a1i/archify"
+    categoria: "diagramas-arquitetura"
+    prioridade_inicial: "P1"
+  - id: omniroute
+    url: "https://github.com/diegosouzapw/OmniRoute"
+    categoria: "gateway-modelos"
+    prioridade_inicial: "P2"
+  - id: herder
+    url: "https://github.com/cleonhp88/herder"
+    categoria: "supervisao-jobs-agentes"
+    prioridade_inicial: "P1"
+  - id: orca-agent-harness
+    url: "https://github.com/ShawnCholeva/orca"
+    categoria: "harness-orquestracao"
+    prioridade_inicial: "P1"
+    identidade_confirmada_pelo_usuario: true
+    observacao: "README e ORCA.md consultados. Aplicação desktop local-first Tauri/React com daemon Fastify/SQLite, contratos Zod, eventos persistidos, workflows, memória e harness de governança. LICENSE não encontrada no caminho padrão; não copiar código até esclarecer. Requer Node 20+, pnpm e toolchain Rust para app desktop."
+  - id: anydoc-adobe-research
+    url: "https://github.com/adobe-research/AnyDoc"
+    categoria: "documentos-html-css-ia"
+    prioridade_inicial: "P2"
+  - id: mattpocock-skills-lote-2
+    url: "https://github.com/mattpocock/skills"
+    categoria: "skills-engenharia"
+    prioridade_inicial: "P0"
+  - id: deepseek-harness
+    url: "https://github.com/deepseek-ai/deepseek-harness"
+    categoria: "harness-agentes-plugin"
+    prioridade_inicial: "P1"
+  - id: openmontage
+    url: "https://github.com/calesthio/OpenMontage"
+    categoria: "producao-video-agentes"
+    prioridade_inicial: "P3"
+  - id: omarship-pendente
+    categoria: "identificacao-pendente"
+    prioridade_inicial: "PENDENTE"
+    observacao: "Nome não localizado com confiança na busca por repositórios; não inferir URL."
+  - id: mander-diffling-pendente
+    categoria: "identificacao-pendente"
+    prioridade_inicial: "PENDENTE"
+    observacao: "Nome não localizado com confiança na busca por repositórios; não inferir URL."
