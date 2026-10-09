@@ -133,7 +133,8 @@ repositorios:
     url: "https://github.com/ShawnCholeva/orca"
     categoria: "harness-orquestracao"
     prioridade_inicial: "P1"
-    observacao: "Identidade provável; confirmar com o usuário antes de adoção."
+    identidade_confirmada_pelo_usuario: true
+    observacao: "README e ORCA.md consultados. Aplicação desktop local-first Tauri/React com daemon Fastify/SQLite, contratos Zod, eventos persistidos, workflows, memória e harness de governança. LICENSE não encontrada no caminho padrão; não copiar código até esclarecer. Requer Node 20+, pnpm e toolchain Rust para app desktop."
   - id: anydoc-adobe-research
     url: "https://github.com/adobe-research/AnyDoc"
     categoria: "documentos-html-css-ia"
